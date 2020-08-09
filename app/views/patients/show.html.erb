@@ -1,4 +1,4 @@
-<h1><%=@patient.name></h1>
+<h1><%= @patient.name %></h1>
 
 <% @patient.appointments.each do |appointment| %>
   <% @patient_doctor = @patient.doctors.find(appointment.doctor_id) %>
